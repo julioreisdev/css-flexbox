@@ -1,0 +1,86 @@
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--branco);
+    padding: 2vh 10vw;
+    box-shadow: 0 1px 5px grey;
+}
+
+.cabecalho__logo {
+    display: flex;
+}
+
+.img-logo {
+    margin: 0 1rem;
+    width: 4rem;
+}
+
+.cabecalho__titulo {
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    color: rgb(87, 100, 124);
+}
+
+.cabecalho__nav {
+    display: flex;
+}
+
+.cabecalho__nav--link {
+    border: 1px solid var(--azul);
+    font-weight: 500;
+    border-radius: 5px;
+    color: var(--azul);
+    text-transform: lowercase;
+    padding: 0.5rem;
+    transition: 0.3s all;
+    margin: 0 0 0 1rem;
+}
+
+.cabecalho__nav--link:hover {
+    background-color: var(--azul);
+    color: var(--branco);
+}
+
+@media (min-width:0) and (max-width:768px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+        padding-bottom: 4rem;
+        border-bottom: 1px solid gainsboro;
+        box-shadow: none;
+    }
+
+    .cabecalho__logo {
+        flex-direction: column;
+    }
+
+    .cabecalho__nav {
+        flex-direction: column;
+    }
+
+    .cabecalho__nav--link {
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid var(--azul);
+    }
+    .cabecalho__nav--link.cabecalho__nav--link--app {
+        order: -1;
+    }
+
+    .img-logo {
+        display: none;
+    }
+}
+
+@media (min-width:480px) and (max-width:768px) {
+    .cabecalho__titulo {
+        font-size: 4rem;
+    }
+
+    .cabecalho__nav--link {
+        font-size: 1.25rem;
+    }
+}

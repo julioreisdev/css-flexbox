@@ -1,0 +1,86 @@
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--branco);
+    padding: 2vh 10vw;
+}   
+
+.rodape__contato--nav {
+    display: flex;
+    justify-content: space-around;
+    width: 30vw;
+}
+
+.rodape__titulo {
+    font-size: 2rem;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    color: rgb(87, 100, 124);
+}
+
+.rodape__contato--whats {
+    background-image: url("../img/whats.png");
+    width: 2rem;
+    height: 2rem;
+}
+
+.rodape__contato--insta {
+    background-image: url("../img/insta.png");
+    width: 2rem;
+    height: 2rem;
+}
+
+.rodape__contato--email {
+    background-image: url("../img/gmail.png");
+    width: 2rem;
+    height: 2rem;
+}
+
+.rodape__formulario--label {
+    display: block;
+    font-weight: 400;
+    color:rgb(33, 47, 43)
+}
+
+.rodape__formulario--campo {
+    border: 0.5px solid rgb(185, 185, 185);
+    border-radius: 5px;
+}
+
+.rodape__formulario--submit {
+    background-color: darkorange;
+    color: var(--branco);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s all;
+}
+
+.rodape__formulario--submit:hover {
+    cursor: pointer;
+    padding: 0.3rem;
+}
+
+.rodape__formulario--submit, .rodape__formulario--campo {
+    padding: 0.25rem;
+}
+
+@media (min-width:0) and (max-width:768px) {
+    .rodape {
+        padding-top: 4rem;
+        background-color: aliceblue;
+        flex-direction: column;
+    }
+
+    .rodape__titulo {
+        margin-bottom: 5rem;
+    }
+
+    .rodape__contato--nav, .rodape__formulario {
+        margin-bottom: 4rem;
+    }
+
+    .rodape__contato--nav {
+        width: 80vw;
+    }
+}

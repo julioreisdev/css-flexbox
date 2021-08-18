@@ -1,0 +1,43 @@
+:root {
+    --bg-color: rgb(199, 208, 218);
+    --branco: #fdfdfd;
+    --azul: rgb(110, 125, 145);
+    --fonte: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--fonte);
+    opacity: 0.9;
+}
+
+a {
+    text-decoration: none;
+}
+
+.imagem-fundo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo-secao {
+    font-weight: 500;
+    margin: 2rem 0;
+    padding: 0.5rem;
+    display: inline-block;
+    background-color: darkgoldenrod;
+    color: var(--branco);
+    border: 1px solid none;
+    border-radius: 3px;
+}
+
+@media (min-width:480px) and (max-width:780px) {
+    .titulo-secao {
+        font-size: 1.3rem;
+    }
+}
